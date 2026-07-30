@@ -1,0 +1,24 @@
+# --- Web framework -----------------------------------------------------------
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# --- Configuration / validation ---------------------------------------------
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+python-dotenv>=1.0.1
+
+# --- Git + GitHub ------------------------------------------------------------
+GitPython>=3.1.43
+httpx>=0.27.2
+
+# --- RAG pipeline ------------------------------------------------------------
+# LangChain's text splitters (code-aware recursive chunking).
+langchain-text-splitters>=0.3.2
+# Local embedding model runner (all-MiniLM-L6-v2). No paid embedding API.
+sentence-transformers>=3.3.0
+# Local, on-disk vector database.
+chromadb>=0.5.20
+
+# --- LLM ---------------------------------------------------------------------
+# Google Gemini (unified google-genai SDK).
+google-genai>=0.8.0

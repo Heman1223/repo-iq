@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& backend\\\\venv\\\\Scripts\\\\python.exe -c \"import sys; sys.path.insert\\(0,'backend'\\); from app.api.router import api_router; print\\(len\\(api_router.routes\\)\\); [print\\(r.path, r.methods\\) for r in api_router.routes]\")",
+      "PowerShell(& backend\\\\venv\\\\Scripts\\\\python.exe \"C:\\\\Users\\\\ACER\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ACER-github-repo-ai-assistant\\\\99864e9d-8ddf-44ee-938e-6fa8a1bd9cde\\\\scratchpad\\\\smoke_api.py\")",
+      "PowerShell(& backend\\\\venv\\\\Scripts\\\\python.exe \"C:\\\\Users\\\\ACER\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ACER-github-repo-ai-assistant\\\\99864e9d-8ddf-44ee-938e-6fa8a1bd9cde\\\\scratchpad\\\\smoke_index.py\" https://github.com/pallets/flask 2>&1)",
+      "PowerShell(git --version; git clone --depth=1 --single-branch --no-tags https://github.com/octocat/Hello-World.git \"$env:TEMP\\\\hw-test\" 2>&1 | Select-Object -Last 5)",
+      "PowerShell(if \\(Test-Path \"$env:TEMP\\\\hw-test\"\\) { Get-ChildItem \"$env:TEMP\\\\hw-test\" -Force | Select-Object Name; Remove-Item -Recurse -Force \"$env:TEMP\\\\hw-test\" } else { \"clone dir missing\" })",
+      "PowerShell(& backend\\\\venv\\\\Scripts\\\\python.exe \"C:\\\\Users\\\\ACER\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-ACER-github-repo-ai-assistant\\\\99864e9d-8ddf-44ee-938e-6fa8a1bd9cde\\\\scratchpad\\\\clone_test.py\")",
+      "PowerShell(Remove-Item -Force frontend\\\\public\\\\favicon.svg, frontend\\\\public\\\\icons.svg, frontend\\\\README.md, frontend\\\\.oxlintrc.json -ErrorAction SilentlyContinue; Get-ChildItem -Recurse frontend -File -Force | Where-Object { $_.FullName -notmatch 'node_modules' } | ForEach-Object { $_.FullName.Replace\\(\"$PWD\\\\\",\"\"\\) })",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(Set-Location C:\\\\Users\\\\ACER\\\\github-repo-ai-assistant; Start-Sleep -Seconds 6; \\(Invoke-WebRequest -Uri http://127.0.0.1:8000/health -UseBasicParsing\\).Content; \\(Invoke-WebRequest -Uri http://127.0.0.1:8000/repositories -UseBasicParsing\\).Content)"
+    ]
+  }
+}
